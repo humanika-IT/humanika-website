@@ -1,0 +1,61 @@
+/* NAVBAR */
+
+.header,
+.header_scroll {
+  @apply box-border w-full fixed flex flex-row justify-between items-center px-4 sm:px-8 lg:px-20 py-4 sm:py-8 left-0 top-0 z-50 transition-all duration-500;
+}
+
+.header {
+  @apply bg-transparent;
+}
+
+.header_scroll {
+  @apply bg-white/20 backdrop-blur-sm;
+}
+
+.logo_container {
+  @apply h-12 lg:h-16 relative hover:opacity-60 transition;
+}
+
+.logo_image {
+  @apply object-contain object-center relative h-12 sm:h-14 lg:h-16;
+}
+
+.menubtn_container {
+  @apply flex justify-center items-center hover:outline-1 outline-white outline-offset-4 rounded-full w-8 md:w-10 h-8 md:h-10 hover:opacity-60 transition text-primaryBlue text-[32px] md:text-[40px];
+}
+
+.menubar_container,
+.menubar_container_close {
+  @apply flex flex-col md:flex-row justify-end items-end md:items-center gap-4 absolute right-4 sm:right-8 md:right-20 lg:right-32 top-20 sm:top-[112px] md:top-auto overflow-hidden;
+}
+
+.menubar_container_close {
+  @apply pointer-events-none;
+}
+
+.menubar_close,
+.menubar_open {
+  @apply flex flex-col md:flex-row items-center justify-center px-10 pt-2 pb-3 bg-primaryBlue gap-12 overflow-hidden transition-all;
+}
+
+.menubar_close {
+  @apply translate-y-[-111%] md:translate-y-0 md:translate-x-[111%];
+}
+
+.menubar_open {
+  @apply transform-none;
+}
+
+.link,
+.link_active {
+  @apply hover:opacity-60 text-white transition;
+}
+
+.link {
+  @apply border-b-0;
+}
+
+.link_active {
+  @apply border-b-2;
+}
