@@ -42,7 +42,8 @@ const Navbar = () => {
   // ==================================================
 
   return (
-    <header className={show ? layout.header : layout.header_scroll}>
+    // <header className={show ? layout.header : layout.header_scroll}>
+    <header className={layout.header_scroll}>
       <Link
         href="/"
         prefetch={false}
