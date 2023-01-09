@@ -1,11 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <footer
-      className={`box-border w-full absolute flex flex-row justify-center items-center px-4 sm:px-8 lg:px-20 py-4 left-0 bottom-0 z-50`}
+      className={`box-border w-full absolute flex flex-col justify-center items-center px-4 sm:px-8 lg:px-20 py-4 left-0 bottom-0 ${
+        router.pathname === "/contact" ||
+        router.pathname === "/about-us" ||
+        router.pathname === "/"
+          ? "bg-transparent"
+          : "bg-primaryBlue"
+      } z-50`}
     >
       <Link
         href="/"
@@ -22,6 +31,9 @@ const Footer = () => {
           className="object-contain object-center h-12 sm:h-14 lg:h-16"
         />
       </Link>
+      <span className="text-[10px] text-white">
+        &#169; Humanika Creative Design 2023/ all rights reserved
+      </span>
     </footer>
   );
 };
