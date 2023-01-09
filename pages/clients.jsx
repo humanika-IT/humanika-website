@@ -15,9 +15,9 @@ const ClientsPage = () => {
               <Image
                 src={`/logo/${item.url}`}
                 alt={item.alt}
-                layout="fill"
-                objectFit="contain"
-                objectPosition="center"
+                fill
+                // objectFit="contain"
+                // objectPosition="center"
               />
             </div>
           );

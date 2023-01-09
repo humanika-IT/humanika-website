@@ -43,7 +43,7 @@ const AboutUsPage = () => {
           dispatched messages.”
         </p>
         <p>We are proud to say that our services are quick and efficient.</p>
-        <p>
+        <p className="font-bold">
           Give us try and make us your one step for all your photography,
           videography, graphic design needs, digital and virtual event.
         </p>
