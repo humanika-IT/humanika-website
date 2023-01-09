@@ -1,5 +1,5 @@
 .container {
-  @apply flex justify-center items-center pt-20 sm:pt-28 pb-20 lg:pb-24 lg:pt-32 px-4 sm:px-8 lg:px-20 min-h-screen bg-[url('/images/background_general.webp')] bg-cover bg-center bg-fixed transition-all;
+  @apply flex justify-center items-center pt-28 sm:pt-32 pb-32 lg:pb-36 lg:pt-36 px-4 sm:px-8 lg:px-20 min-h-screen bg-[url('/images/background_general.webp')] bg-cover bg-center bg-fixed transition-all;
 }
 
 /* ABOUT US */
@@ -11,39 +11,72 @@
 /* CONTACT */
 
 .contact_container {
-  @apply m-auto py-10 px-8 md:px-24 lg:px-32 max-w-[640px] bg-primaryBlue text-center text-white;
+  @apply m-auto py-10 px-8 md:px-24 lg:px-32 max-w-[800px] bg-primaryBlue text-center text-white;
 }
 
 .contact_item {
-  @apply flex flex-row justify-start items-center mb-4;
+  @apply flex flex-row justify-start items-center mb-8;
 }
 
 .contact_icon {
-  @apply text-[20px] sm:text-[24px] lg:text-[32px];
+  @apply text-[24px] sm:text-[32px] lg:text-[48px];
 }
 
 .contact_content {
-  @apply ml-4;
+  @apply ml-4 lg:ml-12 tracking-widest text-[16px] sm:text-[20px] md:text-[22px] lg:text-[26px];
 }
 
 /* CLIENTS */
 
 .clients_container {
-  @apply flex justify-center items-center pt-20 sm:pt-28 pb-20 lg:pb-24 lg:pt-32 px-4 sm:px-8 lg:px-20 min-h-screen bg-white bg-cover bg-center transition-all;
+  @apply flex justify-center items-center pt-20 sm:pt-28 pb-32 lg:pb-36 lg:pt-32 px-4 sm:px-8 lg:px-20 min-h-screen bg-white bg-cover bg-center transition-all;
 }
+
+/* .grid_container {
+  @apply flex flex-row flex-wrap justify-center gap-x-6 gap-y-6 sm:gap-x-10 sm:gap-y-8 md:gap-x-14 md:gap-y-12 lg:gap-x-16 lg:gap-y-16 max-w-[1200px];
+} */
 
 .grid_container {
-  @apply flex flex-row flex-wrap justify-center gap-x-20 gap-y-12 sm:gap-x-24 sm:gap-y-16 md:gap-x-32 md:gap-y-20 lg:gap-x-40 lg:gap-y-24 max-w-[1200px];
+  @apply grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-6 gap-y-6 sm:gap-x-10 sm:gap-y-8 md:gap-x-14 md:gap-y-12 lg:gap-x-16 lg:gap-y-16 max-w-[1200px];
 }
 
-.logo_container {
+/* .logo_container {
   @apply w-32 h-20 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-64 lg:h-40;
   position: relative;
+} */
+
+.logo_container {
+  /* width: 100%; */
+  position: relative;
 }
+
+.logo_container img {
+  object-fit: contain !important;
+  /* width: initial !important; */
+  max-width: 180px !important;
+  max-height: 120px !important;
+  min-height: 50px !important;
+  position: relative !important;
+}
+
+@media (min-width: 768px) {
+  .logo_container img {
+    max-width: 140px !important;
+    max-height: 80px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_container img {
+    max-width: 180px !important;
+    max-height: 120px !important;
+  }
+}
+
 /* WORKS */
 
 .works_container {
-  @apply flex flex-col justify-start items-center pt-20 sm:pt-28 pb-20 lg:pb-24 lg:pt-32 px-4 sm:px-8 lg:px-20 min-h-screen w-full bg-cover bg-center bg-fixed bg-blend-lighten transition-all bg-[#818181CC];
+  @apply flex flex-col justify-start items-center pt-20 sm:pt-28 pb-32 lg:pb-36 lg:pt-32 px-4 sm:px-8 lg:px-20 min-h-screen w-full bg-cover bg-center bg-fixed bg-blend-lighten transition-all bg-white;
 }
 
 .backdrop {
@@ -51,19 +84,19 @@
 }
 
 .works_title {
-  @apply text-xl md:text-3xl text-white tracking-widest;
+  @apply text-xl md:text-3xl text-primaryBlue tracking-widest;
 }
 
 .works_category {
-  @apply flex flex-row flex-wrap justify-center items-center gap-x-10 gap-y-4 text-white my-10;
+  @apply flex flex-row flex-wrap justify-center items-center gap-x-10 gap-y-4 text-primaryBlue my-12;
 }
 
 .category_active {
-  @apply text-[#003C58];
+  @apply text-secondaryPink;
 }
 
 .works_list {
-  @apply max-w-[1000px] flex flex-row flex-wrap justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24;
+  @apply max-w-[800px] lg:max-w-[1000px] flex flex-row flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 xl:gap-20;
 }
 
 .work_container {
@@ -71,8 +104,7 @@
 }
 
 .work_preview_container {
-  @apply bg-zinc-600;
-  position: relative;
+  @apply bg-white flex flex-row relative;
 }
 
 /* w-32 h-20 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-[800px] lg:h-[600px]  */

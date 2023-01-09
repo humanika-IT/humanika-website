@@ -2,16 +2,16 @@
 
 .header,
 .header_scroll {
-  @apply box-border w-full fixed flex flex-row justify-between items-center px-4 sm:px-8 lg:px-20 py-4 sm:py-8 left-0 top-0 z-50 transition-all duration-500;
+  @apply box-border w-full fixed flex flex-row justify-between items-center px-4 sm:px-8 lg:px-20 py-4 sm:py-8 left-0 top-0 z-50 transition-all duration-500 bg-white;
 }
 
-.header {
+/* .header {
   @apply bg-transparent;
 }
 
 .header_scroll {
   @apply bg-white/20 backdrop-blur-sm;
-}
+} */
 
 .logo_container {
   @apply h-12 lg:h-16 relative hover:opacity-60 transition;
@@ -22,7 +22,7 @@
 }
 
 .menubtn_container {
-  @apply flex justify-center items-center hover:outline-1 outline-white outline-offset-4 rounded-full w-8 md:w-10 h-8 md:h-10 hover:opacity-60 transition text-primaryBlue text-[32px] md:text-[40px];
+  @apply flex justify-center items-center hover:outline-1 outline-white outline-offset-4 rounded-full w-8 md:w-10 h-8 md:h-10 hover:opacity-60 transition text-secondaryPink text-[32px] md:text-[40px];
 }
 
 .menubar_container,
@@ -36,7 +36,7 @@
 
 .menubar_close,
 .menubar_open {
-  @apply flex flex-col md:flex-row items-center justify-center px-10 pt-2 pb-3 bg-primaryBlue gap-12 overflow-hidden transition-all;
+  @apply flex flex-col md:flex-row items-center justify-center px-10 pt-2 pb-3 bg-secondaryPink gap-12 overflow-hidden transition-all;
 }
 
 .menubar_close {
