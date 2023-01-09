@@ -138,6 +138,7 @@ const WorkListComponent = ({ filteredList, handleWorkClick }) => {
                 whileTap={{ scale: 1 }}
                 value={item.url}
                 onClick={handleWorkClick}
+                className="relative group"
               >
                 <div className={general.work_container}>
                   <Image
@@ -150,6 +151,14 @@ const WorkListComponent = ({ filteredList, handleWorkClick }) => {
               33vw"
                     className="object-center object-cover pointer-events-none"
                   />
+                </div>
+                <div className="absolute bottom-0 left-0 w-full h-0 p-4 flex flex-col justify-center items-center bg-[#003C5899] opacity-0 group-hover:h-full group-hover:opacity-100 transition-all pointer-events-none">
+                  <h1 className="text-[14px] text-white font-bold tracking-wider">
+                    {item.title}
+                  </h1>
+                  <span className="mt-2 text-[10px] text-white font-light tracking-widest">
+                    {item.category}
+                  </span>
                 </div>
               </motion.button>
             );

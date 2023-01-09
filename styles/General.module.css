@@ -67,7 +67,7 @@
 }
 
 .work_container {
-  @apply relative w-64 h-64 sm:w-48 sm:h-48 lg:w-60 lg:h-60 transition-all pointer-events-none;
+  @apply relative w-64 h-64 sm:w-48 sm:h-48 lg:w-60 lg:h-60 transition-all hover:bg-zinc-600 pointer-events-none;
 }
 
 .work_preview_container {
