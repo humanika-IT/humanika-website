@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
+import { wrap } from "popmotion";
+import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
 import general from "../../styles/General.module.css";
 
 const work_categories = [
@@ -54,17 +56,17 @@ const WorksTestPage = () => {
     return isPreview === false && setPreview(e.target.value);
   };
 
-  useEffect(() => {
-    console.log(isPreview);
-    if (isPreview) {
-      document.getElementById(
-        "change-bg"
-      ).style.backgroundImage = `url(/images/works/${isPreview}.png)`;
-    } else {
-      document.getElementById("change-bg").style.backgroundImage =
-        "url(/images/background_general.webp)";
-    }
-  }, [isPreview]);
+  // useEffect(() => {
+  //   console.log(isPreview);
+  //   if (isPreview) {
+  //     document.getElementById(
+  //       "change-bg"
+  //     ).style.backgroundImage = `url(/images/works/${isPreview}.png)`;
+  //   } else {
+  //     document.getElementById("change-bg").style.backgroundImage =
+  //       "url(/images/background_general.webp)";
+  //   }
+  // }, [isPreview]);
 
   return (
     <div id="change-bg" className={`${general.works_container}`}>
@@ -90,6 +92,7 @@ const WorksTestPage = () => {
           <WorkPreviewComponent
             filteredList={filteredList}
             isPreview={isPreview}
+            setPreview={setPreview}
           />
         ) : (
           <WorkListComponent
@@ -148,7 +151,7 @@ const WorkListComponent = ({ filteredList, handleWorkClick }) => {
                     sizes="(max-width: 639px) 256px,
                       (min-width: 640px) 192px,
               (min-width: 1024px) 240px,
-              33vw"
+              256px"
                     className="object-center object-cover pointer-events-none"
                   />
                 </div>
@@ -169,41 +172,48 @@ const WorkListComponent = ({ filteredList, handleWorkClick }) => {
   );
 };
 
-// const variants = {
-//   enter: (direction) => {
-//     return {
-//       x: direction > 0 ? 1000 : -1000,
-//       opacity: 0,
-//     };
-//   },
-//   center: {
-//     zIndex: 1,
-//     x: 0,
-//     opacity: 1,
-//   },
-//   exit: (direction) => {
-//     return {
-//       zIndex: 0,
-//       x: direction < 0 ? 1000 : -1000,
-//       opacity: 0,
-//     };
-//   },
-// };
+const variants = {
+  enter: (direction) => {
+    return {
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    };
+  },
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction) => {
+    return {
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    };
+  },
+};
 
-// const swipeConfidenceThreshold = 10000;
-// const swipePower = (offset, velocity) => {
-//   return Math.abs(offset) * velocity;
-// };
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset, velocity) => {
+  return Math.abs(offset) * velocity;
+};
 
-const WorkPreviewComponent = ({ filteredList, isPreview }) => {
-  console.log(filteredList.findIndex((item) => item.url === isPreview));
-  const [[page, direction], setPage] = useState([0, 0]);
+const WorkPreviewComponent = ({ filteredList, isPreview, setPreview }) => {
+  const [[page, direction], setPage] = useState([
+    filteredList.findIndex((item) => item.url === isPreview),
+    0,
+  ]);
 
-  // const imageIndex = wrap(0, filteredList.length, page);
+  const imageIndex = wrap(0, filteredList.length, page);
+
+  useEffect(() => {
+    setPreview(filteredList[imageIndex].url);
+  }, [filteredList, imageIndex]);
 
   const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
+
   return (
     <motion.div
       key={"open"}
@@ -215,23 +225,68 @@ const WorkPreviewComponent = ({ filteredList, isPreview }) => {
       }}
       className={general.work_preview_container}
     >
-      <AnimatePresence mode="wait">
-        {filteredList
-          .filter((item, index) => item.url === isPreview)
-          .map((item, index) => {
-            return (
-              <div key={item.url} className={`max-w-[800px]`}>
-                <Image
-                  src={`/images/works/detail-${item.url}.png`}
-                  alt={item.title}
-                  width={800}
-                  height={600}
-                  className="object-center object-contain"
-                />
-              </div>
-            );
-          })}
+      <AnimatePresence initial={false} custom={direction}>
+        <LayoutGroup>
+          <button
+            className="hidden md:block text-[48px] text-primaryBlue"
+            onClick={() => paginate(-1)}
+          >
+            <TbChevronLeft />
+          </button>
+
+          {filteredList
+            .filter((item, index) => item.url === isPreview)
+            .map((item, index) => {
+              return (
+                <motion.div
+                  key={item.url}
+                  className={`max-w-[800px] md:mx-12`}
+                  custom={direction}
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{
+                    x: {
+                      type: "spring",
+                      stiffness: 400,
+                      damping: 40,
+                    },
+                    opacity: { duration: 0.2 },
+                  }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={1}
+                  onDragEnd={(e, { offset, velocity }) => {
+                    const swipe = swipePower(offset.x, velocity.x);
+
+                    if (swipe < -swipeConfidenceThreshold) {
+                      paginate(1);
+                    } else if (swipe > swipeConfidenceThreshold) {
+                      paginate(-1);
+                    }
+                  }}
+                >
+                  <Image
+                    src={`/images/works/detail-${item.url}.png`}
+                    alt={item.title}
+                    width={800}
+                    height={600}
+                    className="object-center object-contain pointer-events-none"
+                  />
+                </motion.div>
+              );
+            })}
+          <button
+            className="hidden md:block text-[48px] text-primaryBlue"
+            onClick={() => paginate(1)}
+          >
+            <TbChevronRight />
+          </button>
+        </LayoutGroup>
       </AnimatePresence>
     </motion.div>
   );
 };
+// HiOutlineChevronRight;
+// HiOutlineChevronLeft;
