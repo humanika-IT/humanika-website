@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // images: {
-  //   loader: "akamai",
-  //   path: "",
-  // },
+  images: {
+    domains: ["placeimg.com", "picsum.photos"],
+    //   loader: "akamai",
+    //   path: "",
+  },
 };
 
 module.exports = nextConfig;

@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryBlue: "#003C58",
+        primaryBlue: "#023C58",
         secondaryPink: "#ED008C",
+      },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
+        sans: ["var(--font-inter)", ...fontFamily.sans],
       },
     },
   },
