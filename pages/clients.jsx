@@ -1,27 +1,31 @@
 import React from "react";
 import Image from "next/image";
 import general from "../styles/General.module.css";
+import typography from "../styles/Typography.module.css";
 
 const ClientsPage = () => {
   return (
-    <div className={general.clients_container}>
-      <div className={general.grid_container}>
-        {clients_list.map((item, index) => {
-          return (
-            <div
-              className={general.logo_container}
-              key={`organization-${index}`}
-            >
-              <Image
-                src={`/logo/${item.url}`}
-                alt={item.alt}
-                fill
-                // objectFit="contain"
-                // objectPosition="center"
-              />
-            </div>
-          );
-        })}
+    <div className={general.container}>
+      <div className={general.clients_container}>
+        <h1 className={typography.page_title}>CLIENTS.</h1>
+        <div className={general.grid_container}>
+          {clients_list.map((item, index) => {
+            return (
+              <div
+                className={general.logo_container}
+                key={`organization-${index}`}
+              >
+                <Image
+                  src={`/logo/${item.url}`}
+                  alt={item.alt}
+                  fill
+                  // objectFit="contain"
+                  // objectPosition="center"
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -44,7 +48,7 @@ const clients_list = [
   { alt: "", url: "logo_pama.png" },
   { alt: "", url: "logo_giz.png" },
   { alt: "", url: "logo_kagum.png" },
-  { alt: "", url: "logo_ummi.jpeg" },
+  { alt: "", url: "logo_ummi.png" },
   { alt: "", url: "logo_pp.png" },
   { alt: "", url: "logo_gni.png" },
   { alt: "", url: "logo_isbi.png" },

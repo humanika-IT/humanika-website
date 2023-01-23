@@ -7,8 +7,8 @@ import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
 import general from "../../styles/General.module.css";
 
 const work_categories = [
-  { title: "ALL" },
   { title: "DESIGN" },
+  { title: "DIGITAL" },
   { title: "PHOTOGRAPHY" },
   { title: "VIDEO" },
 ];
@@ -33,40 +33,24 @@ const work_content = [
 ];
 
 const WorksTestPage = () => {
-  const [categoryActive, setCategoryActive] = useState("ALL");
+  const [categoryActive, setCategoryActive] = useState("DESIGN");
   const [filteredList, setFilteredList] = useState(work_content);
   const [isPreview, setPreview] = useState(false);
 
   const handleCategoryClick = (e) => {
-    return (
-      e.target.value !== categoryActive && setCategoryActive(e.target.value)
-    );
+    setPreview(false);
+    return setCategoryActive(e.target.value);
   };
 
   useEffect(() => {
     setFilteredList(
-      work_content.filter((item, index) =>
-        categoryActive !== "ALL" ? item.category === categoryActive : item
-      )
+      work_content.filter((item, index) => item.category === categoryActive)
     );
-    setPreview(false);
   }, [categoryActive]);
 
   const handleWorkClick = (e) => {
     return isPreview === false && setPreview(e.target.value);
   };
-
-  // useEffect(() => {
-  //   console.log(isPreview);
-  //   if (isPreview) {
-  //     document.getElementById(
-  //       "change-bg"
-  //     ).style.backgroundImage = `url(/images/works/${isPreview}.png)`;
-  //   } else {
-  //     document.getElementById("change-bg").style.backgroundImage =
-  //       "url(/images/background_general.webp)";
-  //   }
-  // }, [isPreview]);
 
   return (
     <div id="change-bg" className={`${general.works_container}`}>
@@ -79,7 +63,9 @@ const WorksTestPage = () => {
               value={item.title}
               onClick={handleCategoryClick}
               className={
-                categoryActive === item.title ? general.category_active : ""
+                categoryActive === item.title
+                  ? general.category_active
+                  : general.category_passive
               }
             >
               {item.title}

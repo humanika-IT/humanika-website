@@ -1,4 +1,5 @@
 import React from "react";
+import { poppins } from "./FontSrc";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -6,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="">{children}</main>
+      <main className={`${poppins.variable} font-poppins`}>{children}</main>
       <Footer />
     </>
   );

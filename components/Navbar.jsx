@@ -4,6 +4,7 @@ import Image from "next/image";
 import MenuBtn from "./MenuBtn";
 import MenuBar from "./MenuBar";
 import layout from "../styles/Layout.module.css";
+import { poppins } from "./FontSrc";
 
 const Navbar = () => {
   // ============ HIDE MENU AT LOGO CLICK =============
@@ -43,7 +44,7 @@ const Navbar = () => {
 
   return (
     // <header className={show ? layout.header : layout.header_scroll}>
-    <header className={layout.header_scroll}>
+    <header className={`${poppins.variable} font-poppins ${layout.header}`}>
       <Link
         href="/"
         prefetch={false}
@@ -52,21 +53,26 @@ const Navbar = () => {
         className={layout.logo_container}
       >
         <Image
-          src="/logo/logo_humanika.png"
-          width={56}
-          height={90}
+          src="/logo/logo_humanika_new.png"
+          width={510}
+          height={160}
           alt="Logo Humanika"
           className={layout.logo_image}
         />
       </Link>
-      <div
-        className={
-          isOpen ? layout.menubar_container : layout.menubar_container_close
-        }
-      >
-        <MenuBar toggleNav={toggleNav} isOpen={isOpen} />
-      </div>
-      <MenuBtn toggleNav={toggleNav} isOpen={isOpen} />
+      <nav className="block lg:hidden">
+        <div
+          className={
+            isOpen ? layout.menubar_container : layout.menubar_container_close
+          }
+        >
+          <MenuBar toggleNav={toggleNav} isOpen={isOpen} />
+        </div>
+        <MenuBtn toggleNav={toggleNav} isOpen={isOpen} />
+      </nav>
+      <nav className="hidden lg:block">
+        <MenuBar toggleNav={toggleNav} isOpen={true} />
+      </nav>
     </header>
   );
 };

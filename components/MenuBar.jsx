@@ -4,10 +4,13 @@ import { useRouter } from "next/router";
 import layout from "../styles/Layout.module.css";
 
 const menu_content = [
-  { title: "Works", url: "works" },
-  { title: "Clients", url: "clients" },
-  { title: "Contact", url: "contact" },
-  { title: "About Us", url: "about-us" },
+  { title: "About Us", url: "/about-us" },
+  { title: "Design", url: "/works/design" },
+  { title: "Digital", url: "/works/digital" },
+  { title: "Photography", url: "/works/photography" },
+  { title: "Videography", url: "/works/videography" },
+  { title: "Clients", url: "/clients" },
+  { title: "Contact", url: "/contact" },
 ];
 
 const MenuBar = ({ toggleNav, isOpen }) => {
@@ -19,13 +22,11 @@ const MenuBar = ({ toggleNav, isOpen }) => {
         return (
           <li key={`menu-${item.url}`}>
             <Link
-              href={`/${item.url}`}
+              href={item.url}
               prefetch={false}
               passHref
               className={
-                router.pathname === `/${item.url}`
-                  ? layout.link_active
-                  : layout.link
+                router.asPath === item.url ? layout.link_active : layout.link
               }
             >
               {item.title}

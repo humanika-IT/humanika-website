@@ -1,39 +1,59 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
+import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
+import layout from "../styles/Layout.module.css";
+import { poppins } from "./FontSrc";
 
 const Footer = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <footer
-      className={`box-border w-full absolute flex flex-col justify-center items-center px-4 sm:px-8 lg:px-20 py-4 left-0 bottom-0 ${
-        router.pathname === "/contact" ||
-        router.pathname === "/about-us" ||
-        router.pathname === "/"
-          ? "bg-transparent"
-          : "bg-primaryBlue"
-      } z-50`}
+      className={`${poppins.variable} font-poppins ${layout.footer_container}`}
     >
-      <Link
-        href="/"
-        prefetch={false}
-        passHref
-        onClick={() => setNav(false)}
-        className="h-12 lg:h-16 relative hover:opacity-60 transition"
-      >
-        <Image
-          src="/logo/logo_humanika_bw.png"
-          width={113}
-          height={62}
-          alt="Logo Humanika BW"
-          className="object-contain object-center h-12 sm:h-14 lg:h-16"
-        />
-      </Link>
-      <span className="text-[10px] text-white">
-        &#169; Humanika Creative Design 2023/ all rights reserved
+      <span className={layout.footer_copyright}>
+        copyright &#169; 2023 - Humanika Creative Design
       </span>
+      <div className={layout.footer_contact}>
+        <span className={layout.footer_connect}>CONNECT WITH US</span>
+        <div className={layout.footer_medsoc_list}>
+          <a
+            className={layout.footer_medsoc_item}
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiMail className={layout.footer_medsoc_icon} />
+          </a>
+          <a
+            className={layout.footer_medsoc_item}
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className={layout.footer_medsoc_icon} />
+          </a>
+          <a
+            className={layout.footer_medsoc_item}
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF className={layout.footer_medsoc_icon} />
+          </a>
+          <a
+            className={layout.footer_medsoc_item}
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube className={layout.footer_medsoc_icon} />
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };

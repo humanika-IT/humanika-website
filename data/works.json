@@ -1,0 +1,178 @@
+[
+  {
+    "works_category_title": "Design",
+    "works_category_url": "design",
+    "works_subs": [
+      {
+        "work_subs_title": "didactic up Branding",
+        "work_subs_cover": "https://picsum.photos/640/480.webp",
+        "work_url": "didactic-up-branding",
+        "work_image": [
+          "https://picsum.photos/640/480?random=2",
+          "https://picsum.photos/640/480?random=3",
+          "https://picsum.photos/640/480?random=4"
+        ]
+      },
+      {
+        "work_subs_title": "Operations Bedfordshire Texas",
+        "work_subs_cover": "https://picsum.photos/640/480?random=8",
+        "work_url": "mockup-2",
+        "work_image": [
+          "https://picsum.photos/640/480?random=5",
+          "https://picsum.photos/640/480?random=6",
+          "https://picsum.photos/640/480?random=7"
+        ]
+      },
+      {
+        "work_subs_title": "Research Shirt methodologies",
+        "work_subs_cover": "https://picsum.photos/640/480?random=9",
+        "work_url": "mockup-99",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ]
+      },
+      {
+        "work_subs_title": "Rustic",
+        "work_subs_cover": "https://picsum.photos/640/480?random=10",
+        "work_url": "mockup-21",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ]
+      },
+      {
+        "work_subs_title": "Berkshire invoice array",
+        "work_subs_cover": "https://picsum.photos/640/480?random=11",
+        "work_url": "mockup-3",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ]
+      }
+    ]
+  },
+  {
+    "works_category_title": "Digital",
+    "works_category_url": "digital",
+    "works_subs": [
+      {
+        "work_subs_title": "calculating New",
+        "work_subs_cover": "https://picsum.photos/640/480?random=12",
+        "work_url": "mockup-4",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ]
+      },
+      {
+        "work_subs_title": "Programmable",
+        "work_subs_cover": "https://picsum.photos/640/480?random=13",
+        "work_url": "mockup-5",
+        "work_image": [
+          "https://picsum.photos/640/480?random=89",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480?random=43"
+        ]
+      },
+      {
+        "work_subs_title": "foreground",
+        "work_subs_cover": "https://picsum.photos/640/480?random=14",
+        "work_url": "mockup-6",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480?random=498",
+          "https://picsum.photos/640/480"
+        ]
+      }
+    ]
+  },
+  {
+    "works_category_title": "Photography",
+    "works_category_url": "photography",
+    "works_subs": [
+      {
+        "work_subs_title": "cyan",
+        "work_subs_cover": "https://picsum.photos/640/480?random=15",
+        "work_url": "mockup-7",
+        "work_image": [
+          "https://picsum.photos/640/480/technics",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ]
+      },
+      {
+        "work_subs_title": "firmware Soap Frozen",
+        "work_subs_cover": "https://picsum.photos/640/480?random=16",
+        "work_url": "mockup-8",
+        "work_image": [
+          "https://picsum.photos/640/480/cats",
+          "https://picsum.photos/640/480?random=",
+          "https://picsum.photos/640/480/cats"
+        ]
+      },
+      {
+        "work_subs_title": "Concrete Home Assistant",
+        "work_subs_cover": "https://picsum.photos/640/480?random=17",
+        "work_url": "mockup-9",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480/nature",
+          "https://picsum.photos/640/480/nature"
+        ]
+      }
+    ]
+  },
+  {
+    "works_category_title": "Videography",
+    "works_category_url": "videography",
+    "works_subs": [
+      {
+        "work_subs_title": "fuchsia Stream Computer",
+        "work_subs_cover": "https://picsum.photos/640/480?random=18",
+        "work_url": "mockup-10",
+        "work_image": [
+          "https://picsum.photos/640/480/people",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480"
+        ],
+        "work_video": [
+          "https://picsum.photos/640/480/people",
+          "https://picsum.photos/640/480"
+        ]
+      },
+      {
+        "work_subs_title": "Customer-focused",
+        "work_subs_cover": "https://picsum.photos/640/480?random=19",
+        "work_url": "mockup-11",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480/people",
+          "https://picsum.photos/640/480/sports"
+        ],
+        "work_video": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480/technics"
+        ]
+      },
+      {
+        "work_subs_title": "withdrawal",
+        "work_subs_cover": "https://picsum.photos/640/480?random=20",
+        "work_url": "mockup-12",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480?random="
+        ],
+        "work_video": [
+          "https://picsum.photos/640/480/people",
+          "https://picsum.photos/640/480"
+        ]
+      }
+    ]
+  }
+]
