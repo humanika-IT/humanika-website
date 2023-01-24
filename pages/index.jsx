@@ -10,10 +10,11 @@ export default function Home() {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover object-center !z-0"
+        className="w-full h-full object-cover object-center !z-0"
       >
         <source src="/images/bg-homepage.mp4" type="video/mp4" />
       </video>
+      {/* absolute top-0 left-0 */}
       {/* <Image
         src="/images/bg-test.png"
         // width={56}
