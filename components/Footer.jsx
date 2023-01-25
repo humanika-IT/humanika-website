@@ -4,6 +4,7 @@ import Image from "next/image";
 // import { useRouter } from "next/router";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { IoIosMail } from "react-icons/io";
 import layout from "../styles/Layout.module.css";
 import { poppins } from "./FontSrc";
 
@@ -26,7 +27,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FiMail className={layout.footer_medsoc_icon} />
+            <IoIosMail className={layout.footer_medsoc_icon} />
           </a>
           <a
             className={layout.footer_medsoc_item}
@@ -42,6 +43,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            {/* <FaFacebookF className="text-[24px] sm:text-base text-zinc-500" /> */}
             <FaFacebookF className={layout.footer_medsoc_icon} />
           </a>
           <a
