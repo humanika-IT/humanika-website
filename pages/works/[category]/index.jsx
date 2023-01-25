@@ -79,7 +79,7 @@ const WorksTemplatePage = ({ works_list }) => {
                 >
                   <div className={general.work_container}>
                     <Image
-                      src={item.work_subs_cover}
+                      src={`/images/works/${item.work_subs_cover}`}
                       alt={item.work_subs_title}
                       fill
                       sizes="(min-width: 640px) 33vw,50vw"
@@ -238,7 +238,7 @@ const WorkOverlayComponent = ({ filteredList, isPreview, setPreview }) => {
         <LayoutGroup>
           <motion.div
             key={filteredList.work_image[imageIndex]}
-            className={`w-[100vw] md:w-[60vw] h-[100vw] md:h-[50vw] relative`}
+            className={`w-[100vw] md:w-[80vw] h-[100vw] md:h-[80vh] relative`}
             custom={direction}
             variants={variants}
             initial="enter"
@@ -266,12 +266,13 @@ const WorkOverlayComponent = ({ filteredList, isPreview, setPreview }) => {
             }}
           >
             <Image
-              src={filteredList.work_image[imageIndex]}
+              src={`/images/works/${filteredList.work_image[imageIndex]}`}
               alt={"item"}
               // width={800}
               // height={600}
               fill
-              sizes="(min-width: 640px) 33vw, 50vw"
+              quality={80}
+              sizes="90vw"
               className="object-center object-contain pointer-events-none"
             />
           </motion.div>
