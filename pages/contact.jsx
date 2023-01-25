@@ -17,6 +17,7 @@ const ContactPage = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover object-center !z-0"
       >
         <source src="/images/bg_contact.mp4" type="video/mp4" />

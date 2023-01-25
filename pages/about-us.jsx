@@ -69,6 +69,7 @@ const AboutUsPage = () => {
           autoPlay
           loop
           muted
+          playsInline
           className="lg:absolute self-end right-0 bottom-14 w-[640px] object-cover object-center !z-0"
         >
           <source src="/images/video_about_us.mp4" type="video/mp4" />
