@@ -96,19 +96,29 @@
     "works_category_url": "photography",
     "works_subs": [
       {
-        "work_subs_title": "cyan",
-        "work_subs_cover": "https://picsum.photos/640/480?random=15",
-        "work_url": "mockup-7",
+        "work_subs_title": "Exterior & Interior",
+        "work_subs_cover": "exterior-interior-cover.webp",
+        "work_url": "exterior-interior",
         "work_image": [
-          "https://picsum.photos/640/480/technics",
-          "https://picsum.photos/640/480",
-          "https://picsum.photos/640/480"
+          "exterior-interior-13.webp",
+          "exterior-interior-1.webp",
+          "exterior-interior-2.webp",
+          "exterior-interior-3.webp",
+          "exterior-interior-4.webp",
+          "exterior-interior-5.webp",
+          "exterior-interior-6.webp",
+          "exterior-interior-7.webp",
+          "exterior-interior-8.webp",
+          "exterior-interior-9.webp",
+          "exterior-interior-10.webp",
+          "exterior-interior-11.webp",
+          "exterior-interior-12.webp"
         ]
       },
       {
-        "work_subs_title": "firmware Soap Frozen",
-        "work_subs_cover": "https://picsum.photos/640/480?random=16",
-        "work_url": "mockup-8",
+        "work_subs_title": "Fashion Product",
+        "work_subs_cover": "fashion-product-cover.webp",
+        "work_url": "fashion-product",
         "work_image": [
           "https://picsum.photos/640/480/cats",
           "https://picsum.photos/640/480?random=",
@@ -116,13 +126,44 @@
         ]
       },
       {
-        "work_subs_title": "Concrete Home Assistant",
-        "work_subs_cover": "https://picsum.photos/640/480?random=17",
-        "work_url": "mockup-9",
+        "work_subs_title": "Food & Beverages",
+        "work_subs_cover": "food-beverages-cover.webp",
+        "work_url": "food-beverages",
         "work_image": [
           "https://picsum.photos/640/480",
           "https://picsum.photos/640/480/nature",
           "https://picsum.photos/640/480/nature"
+        ]
+      },
+      {
+        "work_subs_title": "Industrial",
+        "work_subs_cover": "industrial-cover.webp",
+        "work_url": "industrial",
+        "work_image": [
+          "https://picsum.photos/640/480",
+          "https://picsum.photos/640/480/nature",
+          "https://picsum.photos/640/480/nature"
+        ]
+      },
+      {
+        "work_subs_title": "Advertisement & Commercial",
+        "work_subs_cover": "advertisement-and-commercial-cover.webp",
+        "work_url": "advertisement-and-commercial",
+        "work_image": [
+          "advertisement-and-commercial-1.webp",
+          "advertisement-and-commercial-2.webp",
+          "advertisement-and-commercial-3.webp",
+          "advertisement-and-commercial-4.webp",
+          "advertisement-and-commercial-5.webp",
+          "advertisement-and-commercial-6.webp",
+          "advertisement-and-commercial-7.webp",
+          "advertisement-and-commercial-8.webp",
+          "advertisement-and-commercial-9.webp",
+          "advertisement-and-commercial-10.webp",
+          "advertisement-and-commercial-11.webp",
+          "advertisement-and-commercial-12.webp",
+          "advertisement-and-commercial-13.webp",
+          "advertisement-and-commercial-14.webp"
         ]
       }
     ]
