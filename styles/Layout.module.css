@@ -75,13 +75,13 @@
 }
 
 .footer_medsoc_list {
-  @apply flex flex-row gap-6 sm:gap-4;
+  @apply flex flex-row gap-6 sm:gap-[14px];
 }
 
 .footer_medsoc_item {
-  @apply p-1 bg-slate-600 rounded-full;
+  @apply p-[6px] bg-[#E8E8E9] rounded-full;
 }
 
 .footer_medsoc_icon {
-  @apply text-[24px] sm:text-[18px] text-white;
+  @apply text-[24px] sm:text-base text-zinc-500;
 }
