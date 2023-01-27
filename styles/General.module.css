@@ -53,7 +53,7 @@
 }
 
 .contact_content {
-  @apply flex flex-col justify-center items-start lg:items-center w-full h-full tracking-wider text-base lg:text-lg;
+  @apply flex flex-col justify-center items-start lg:items-center w-full h-full text-base lg:text-lg;
 }
 
 /* CLIENTS */
@@ -124,15 +124,74 @@
 .works_list {
   @apply w-full flex flex-row flex-wrap justify-center;
 }
-/* gap-8 md:gap-12 lg:gap-16 xl:gap-20 */
+
+.work_btn {
+  @apply relative overflow-hidden;
+}
 
 .work_container {
-  @apply relative w-[50vw] md:w-[33.33vw] h-[50vw] md:h-[20vw] transition-all hover:bg-zinc-600 pointer-events-none;
+  @apply relative w-[50vw] md:w-[33.2vw] h-[50vw] md:h-[20vw] transition-all hover:bg-zinc-600 pointer-events-none;
 }
-/* h-64 sm:w-48 sm:h-48 lg:w-60 lg:h-60  */
+
+.work_image {
+  @apply object-center object-cover pointer-events-none;
+}
+
+.work_overlay {
+  @apply absolute bottom-0 left-0 w-full h-full p-4 flex flex-col justify-center items-center opacity-0 bg-[#003C58]/40  transition-all pointer-events-none;
+}
+
+.work_overlay_title {
+  @apply text-[12px] md:text-sm text-white font-bold tracking-wider;
+}
+
+.work_overlay_subtitle {
+  @apply mt-2 text-[10px] md:text-xs text-white font-normal tracking-widest;
+}
+
+.work_btn:hover > .work_container {
+  @apply scale-105;
+}
+
+.work_preview_backdrop {
+  @apply fixed top-0 left-0 w-screen h-screen backdrop-blur-sm backdrop-brightness-75 z-50 flex flex-col justify-center items-center transition-all;
+}
 
 .work_preview_container {
-  @apply bg-transparent md:bg-white flex flex-row  overflow-hidden relative;
+  @apply bg-transparent md:bg-white flex flex-row justify-center items-center overflow-hidden relative;
+}
+
+.work_preview_close {
+  @apply absolute top-8 right-8 text-4xl text-white hover:text-secondaryPink;
+}
+
+.work_preview_prev,
+.work_preview_next {
+  @apply absolute md:relative top-[50%] md:top-0 block text-3xl md:text-[48px] text-white md:text-primaryBlue backdrop-brightness-75 md:backdrop-brightness-100 z-[100];
+}
+
+.work_preview_prev {
+  @apply left-2 md:left-0;
+}
+
+.work_preview_next {
+  @apply right-2 md:right-0;
+}
+
+.work_preview_content {
+  @apply w-[100vw] md:w-[80vw] h-[100vw] md:h-[80vh] overflow-hidden relative;
+}
+
+.work_preview_image_container {
+  @apply w-full h-full absolute;
+}
+
+.work_preview_image {
+  @apply object-center object-contain pointer-events-none;
+}
+
+.work_preview_video {
+  @apply mb-6 absolute top-0 left-0 mx-auto h-full w-full;
 }
 
 /* w-32 h-20 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-[800px] lg:h-[600px]  */
