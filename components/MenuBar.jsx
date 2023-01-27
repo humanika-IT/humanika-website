@@ -13,7 +13,7 @@ const menu_content = [
   { title: "Contact", url: "/contact" },
 ];
 
-const MenuBar = ({ toggleNav, isOpen }) => {
+const MenuBar = ({ setNav, isOpen }) => {
   const router = useRouter();
 
   return (
@@ -24,7 +24,9 @@ const MenuBar = ({ toggleNav, isOpen }) => {
             <Link
               href={item.url}
               prefetch={false}
+              scroll={true}
               passHref
+              onClick={() => setNav(false)}
               className={
                 router.asPath === item.url ? layout.link_active : layout.link
               }
