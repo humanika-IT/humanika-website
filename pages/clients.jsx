@@ -1,19 +1,50 @@
 import React from "react";
 import Image from "next/image";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import general from "../styles/General.module.css";
 import typography from "../styles/Typography.module.css";
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.1,
+    },
+    duration: 0.2,
+  },
+};
+
+const child = {
+  hidden: { x: 20, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      damping: 300,
+    },
+  },
+};
 
 const ClientsPage = () => {
   return (
     <div className={general.container}>
       <div className={general.clients_container}>
         <h1 className={typography.page_title}>CLIENTS.</h1>
-        <div className={general.grid_container}>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className={general.grid_container}
+        >
           {clients_list.map((item, index) => {
             return (
-              <div
+              <motion.div
                 className={general.logo_container}
                 key={`organization-${index}`}
+                variants={child}
               >
                 <Image
                   src={`/logo/${item.url}`}
@@ -22,10 +53,10 @@ const ClientsPage = () => {
                   // objectFit="contain"
                   // objectPosition="center"
                 />
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
