@@ -38,6 +38,7 @@ const HomePage = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute top-0 w-full h-full object-cover object-center !z-50"
       >
         <source src="/images/bg_homepage.mp4" type="video/mp4" />
