@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: "var(--font-poppins)",
+        montserrat: "var(--font-montserrat)",
         sans: ["var(--font-inter)", ...fontFamily.sans],
       },
     },
