@@ -133,6 +133,12 @@
           "advertisement-and-commercial-13.webp",
           "advertisement-and-commercial-14.webp"
         ]
+      },
+      {
+        "work_subs_title": "Portrait",
+        "work_subs_cover": "portrait-cover.webp",
+        "work_url": "portrait",
+        "work_image": ["portrait-cover.webp"]
       }
     ]
   },
@@ -141,14 +147,8 @@
     "works_category_url": "videography",
     "works_subs": [
       {
-        "work_subs_title": "Documentary",
-        "work_subs_cover": "videography-placeholder.webp",
-        "work_url": "documentary",
-        "work_video": ["qveqjPOvSO8", "Ng0eyFpcWMk", "xRTZBwtbeTA"]
-      },
-      {
         "work_subs_title": "Motion Graphic",
-        "work_subs_cover": "videography-placeholder.webp",
+        "work_subs_cover": "motion-graphic-cover.webp",
         "work_url": "motion-graphic",
         "work_video": [
           "sQdezl9geXQ",
@@ -160,13 +160,13 @@
       },
       {
         "work_subs_title": "Company Profile",
-        "work_subs_cover": "videography-placeholder.webp",
+        "work_subs_cover": "company-profile-cover.webp",
         "work_url": "company-profile",
         "work_video": ["E61aqrx105I"]
       },
       {
         "work_subs_title": "Event",
-        "work_subs_cover": "videography-placeholder.webp",
+        "work_subs_cover": "event-cover.webp",
         "work_url": "event",
         "work_video": [
           "s-DsVTwMT-o",
@@ -180,6 +180,12 @@
           "HdS1OP7fvLs",
           "edmTHxtpjsU"
         ]
+      },
+      {
+        "work_subs_title": "Documentary",
+        "work_subs_cover": "documentary-cover.webp",
+        "work_url": "documentary",
+        "work_video": ["qveqjPOvSO8", "Ng0eyFpcWMk", "xRTZBwtbeTA"]
       }
     ]
   }
