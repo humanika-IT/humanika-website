@@ -34,24 +34,26 @@ const HomePage = () => {
     //   {/* <h1 className="!z-10 text-[#abcdef]">HELLOooooooooooooooo</h1> */}
     // </div>
     <>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 w-full h-full object-cover object-center !z-50"
-      >
-        <source src="/images/bg_homepage.mp4" type="video/mp4" />
-      </video>
-      <motion.div
+      <div className="absolute top-0 w-screen h-screen bg-zinc-800 !z-50">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full object-cover object-center "
+        >
+          <source src="/images/bg_homepage.mp4" type="video/mp4" />
+        </video>
+      </div>
+      {/* <motion.div
         // whileHover={{ x: [0, 0] }}
-        // animate={{ x: [0, -8, 0] }}
-        // transition={{
-        //   ease: "easeInOut",
+        animate={{ x: [0, -8, 0] }}
+        transition={{
+          ease: "easeInOut",
 
-        //   duration: 2,
-        //   repeat: Infinity,
-        // }}
+          duration: 2,
+          repeat: Infinity,
+        }}
         className="absolute right-4 sm:right-10 bottom-20 sm:bottom-10 max-w-[200px] sm:max-w-[400px] z-[100]"
       >
         <Link href="/about-us" prefetch={false} scroll={true} passHref>
@@ -67,10 +69,39 @@ const HomePage = () => {
                 duration: 2,
                 repeat: Infinity,
               }}
+              className="flex flex-row"
             >
-              <FaArrowRight />
+              <HiChevronRight />
+              <HiChevronRight />
+              <HiChevronRight />
             </motion.span>
           </span>
+        </Link>
+      </motion.div> */}
+      <motion.div
+        // whileHover={{ x: [0, 0] }}
+        animate={{ x: [0, -8, 0] }}
+        transition={{
+          ease: "easeInOut",
+
+          duration: 2,
+          repeat: Infinity,
+        }}
+        className="absolute right-4 sm:right-10 bottom-6 sm:bottom-10 z-[100]"
+      >
+        <Link
+          href="/about-us"
+          prefetch={false}
+          passHref
+          className={`relative hover:opacity-60 transition`}
+        >
+          <Image
+            src="/images/home_btn.png"
+            width={149}
+            height={109}
+            alt="Logo Humanika"
+            className={`object-contain object-center h-8 w-16 lg:h-12 lg:w-20`}
+          />
         </Link>
       </motion.div>
     </>
