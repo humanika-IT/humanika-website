@@ -35,7 +35,7 @@
 }
 
 .contact_list {
-  @apply flex flex-col lg:flex-row justify-between gap-10 lg:gap-8 text-white text-left lg:text-center;
+  @apply flex flex-col lg:flex-row justify-between gap-10 lg:gap-8 max-w-max lg:max-w-none p-4 bg-zinc-800/30 backdrop-brightness-105 text-white text-left lg:text-center;
 }
 
 /* grid grid-cols-3 place-items-start */
