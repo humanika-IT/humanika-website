@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import MenuBtn from "./MenuBtn";
 import MenuBar from "./MenuBar";
 import layout from "../styles/Layout.module.css";
@@ -46,7 +47,18 @@ const Navbar = () => {
   return (
     // <header className={show ? layout.header : layout.header_scroll}>
     <>
-      <header className={`${poppins.variable} font-poppins ${layout.header}`}>
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{
+          type: "spring",
+          duration: 1,
+        }}
+        layout
+        className={`${poppins.variable} font-poppins ${layout.header}`}
+        key="header"
+      >
         <Link
           href="/"
           prefetch={false}
@@ -68,14 +80,14 @@ const Navbar = () => {
         <nav className="hidden lg:block">
           <MenuBar setNav={setNav} isOpen={true} />
         </nav>
-      </header>
+      </motion.header>
       <nav className={`${poppins.variable} font-poppins block lg:hidden`}>
         <div
           className={
             isOpen ? layout.menubar_container : layout.menubar_container_close
           }
         >
-          <MenuBtn toggleNav={toggleNav} isOpen={isOpen} />
+          {/* <MenuBtn toggleNav={toggleNav} isOpen={isOpen} /> */}
           <MenuBar setNav={setNav} isOpen={isOpen} />
         </div>
       </nav>

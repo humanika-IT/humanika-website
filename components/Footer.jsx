@@ -1,19 +1,29 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 // import { useRouter } from "next/router";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { IoIosMail } from "react-icons/io";
 import layout from "../styles/Layout.module.css";
-import { poppins } from "./FontSrc";
+import { montserrat, poppins } from "./FontSrc";
 
 const Footer = () => {
   // const router = useRouter();
 
   return (
-    <footer
-      className={`${poppins.variable} font-poppins ${layout.footer_container}`}
+    <motion.footer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{
+        type: "spring",
+        duration: 1,
+      }}
+      layout
+      className={`${montserrat.variable} font-montserrat ${layout.footer_container}`}
+      key="footer"
     >
       <span className={layout.footer_copyright}>
         copyright &#169; 2023 - Humanika Creative Design
@@ -23,7 +33,7 @@ const Footer = () => {
         <div className={layout.footer_medsoc_list}>
           <a
             className={layout.footer_medsoc_item}
-            href="#"
+            href="mailto:humanika39a@yahoo.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,7 +41,7 @@ const Footer = () => {
           </a>
           <a
             className={layout.footer_medsoc_item}
-            href="#"
+            href="https://www.instagram.com/artspacehumanika/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,7 +49,7 @@ const Footer = () => {
           </a>
           <a
             className={layout.footer_medsoc_item}
-            href="#"
+            href="https://www.facebook.com/humanika.artspace"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +58,7 @@ const Footer = () => {
           </a>
           <a
             className={layout.footer_medsoc_item}
-            href="#"
+            href="https://www.youtube.com/@humanikaartspaceofficial"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +66,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

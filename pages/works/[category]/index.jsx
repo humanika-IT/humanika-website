@@ -15,8 +15,8 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.05,
+      delayChildren: 0.1,
+      staggerChildren: 0.2,
     },
     duration: 0.2,
   },
@@ -27,6 +27,7 @@ const child = {
   visible: {
     y: 0,
     opacity: 1,
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 

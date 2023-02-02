@@ -12,27 +12,40 @@ const container = {
       delayChildren: 0.2,
       staggerChildren: 0.1,
     },
-    duration: 0.2,
+    duration: 0.8,
   },
 };
 
 const child = {
-  hidden: { x: 20, opacity: 0 },
+  hidden: { y: 40, opacity: 0 },
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
-    transition: {
-      type: "tween",
-      damping: 300,
-    },
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
+
+const title_animation = {
+  hidden: { y: 10, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 2,
+    transition: { duration: 1, ease: "easeOut" },
   },
 };
 
 const ClientsPage = () => {
   return (
     <div className={general.container}>
-      <div className={general.clients_container}>
-        <h1 className={typography.page_title}>CLIENTS.</h1>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className={general.clients_container}
+      >
+        <motion.h1 variants={title_animation} className={typography.page_title}>
+          CLIENTS.
+        </motion.h1>
         <motion.div
           variants={container}
           initial="hidden"
@@ -57,7 +70,7 @@ const ClientsPage = () => {
             );
           })}
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };
