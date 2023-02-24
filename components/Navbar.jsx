@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import MenuBtn from "./MenuBtn";
 import MenuBar from "./MenuBar";
 import layout from "../styles/Layout.module.css";
-import { poppins } from "./FontSrc";
+import { inter } from "./FontSrc";
 
 const Navbar = () => {
   // ============ HIDE MENU AT LOGO CLICK =============
@@ -56,7 +56,7 @@ const Navbar = () => {
           duration: 1,
         }}
         layout
-        className={`${poppins.variable} font-poppins ${layout.header}`}
+        className={`${inter.variable} font-inter ${layout.header}`}
         key="header"
       >
         <Link
@@ -81,7 +81,7 @@ const Navbar = () => {
           <MenuBar setNav={setNav} isOpen={true} />
         </nav>
       </motion.header>
-      <nav className={`${poppins.variable} font-poppins block lg:hidden`}>
+      <nav className={`${inter.variable} font-inter block lg:hidden`}>
         <div
           className={
             isOpen ? layout.menubar_container : layout.menubar_container_close

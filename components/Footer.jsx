@@ -7,7 +7,7 @@ import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { IoIosMail } from "react-icons/io";
 import layout from "../styles/Layout.module.css";
-import { montserrat, poppins } from "./FontSrc";
+import { montserrat, poppins, inter } from "./FontSrc";
 
 const Footer = () => {
   // const router = useRouter();
@@ -22,7 +22,7 @@ const Footer = () => {
         duration: 1,
       }}
       layout
-      className={`${montserrat.variable} font-montserrat ${layout.footer_container}`}
+      className={`${inter.variable} font-inter ${layout.footer_container}`}
       key="footer"
     >
       <span className={layout.footer_copyright}>
