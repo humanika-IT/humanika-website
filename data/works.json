@@ -7,31 +7,71 @@
         "work_subs_title": "Branding",
         "work_subs_cover": "branding-cover.webp",
         "work_url": "mockup-21",
-        "work_image": ["https://picsum.photos/640/480"]
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Catalogue",
         "work_subs_cover": "catalogue-cover.webp",
         "work_url": "mockup-3",
-        "work_image": ["https://picsum.photos/640/480"]
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Book & Magazine",
         "work_subs_cover": "book-magazine-cover.webp",
         "work_url": "mockup-99",
-        "work_image": ["https://picsum.photos/640/480"]
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Website",
         "work_subs_cover": "web-cover.webp",
         "work_url": "didactic-up-branding",
-        "work_image": ["https://picsum.photos/640/480?random=2"]
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Advertisement",
         "work_subs_cover": "advertisement-cover.webp",
         "work_url": "mockup-2",
-        "work_image": ["https://picsum.photos/640/480?random=5"]
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       }
     ]
   },
@@ -43,19 +83,50 @@
         "work_subs_title": "3D",
         "work_subs_cover": "digital-cover-placeholder.webp",
         "work_url": "3d",
-        "work_image": ["digital-cover-placeholder.webp"]
+        "work_detail": [
+          {
+            "work_video": "ZbQM-m8LYVk",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "sq8t16t718Y",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Virtual Gallery",
         "work_subs_cover": "digital-cover-placeholder.webp",
         "work_url": "virtual gallery",
-        "work_image": ["digital-cover-placeholder.webp"]
+        "work_detail": [
+          {
+            "work_video": "matxAoJsWoQ",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "360",
         "work_subs_cover": "digital-cover-placeholder.webp",
         "work_url": "360",
-        "work_image": ["digital-cover-placeholder.webp"]
+        "work_detail": [
+          {
+            "work_image": "digital-cover-placeholder.webp",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       }
     ]
   },
@@ -67,78 +138,302 @@
         "work_subs_title": "Exterior & Interior",
         "work_subs_cover": "exterior-interior-cover.webp",
         "work_url": "exterior-interior",
-        "work_image": [
-          "exterior-interior-1.webp",
-          "exterior-interior-2.webp",
-          "exterior-interior-3.webp",
-          "exterior-interior-4.webp",
-          "exterior-interior-5.webp",
-          "exterior-interior-6.webp",
-          "exterior-interior-7.webp",
-          "exterior-interior-8.webp",
-          "exterior-interior-9.webp",
-          "exterior-interior-10.webp",
-          "exterior-interior-11.webp",
-          "exterior-interior-12.webp",
-          "exterior-interior-13.webp"
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-1.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-2.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-3.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-4.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-5.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-6.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-7.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-8.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-9.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-10.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-11.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-12.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Fashion & Product",
         "work_subs_cover": "fashion-product-cover.webp",
         "work_url": "fashion-product",
-        "work_image": [
-          "https://picsum.photos/640/480/cats",
-          "https://picsum.photos/640/480?random=",
-          "https://picsum.photos/640/480/cats"
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Food & Beverages",
         "work_subs_cover": "food-beverages-cover.webp",
         "work_url": "food-beverages",
-        "work_image": [
-          "https://picsum.photos/640/480",
-          "https://picsum.photos/640/480/nature",
-          "https://picsum.photos/640/480/nature"
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Industrial",
         "work_subs_cover": "industrial-cover.webp",
         "work_url": "industrial",
-        "work_image": [
-          "https://picsum.photos/640/480",
-          "https://picsum.photos/640/480/nature",
-          "https://picsum.photos/640/480/nature"
+        "work_detail": [
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_image": "exterior-interior-13.webp",
+            "work_client": "Grand Seriti Hotel",
+            "work_title": "Test Work Titel",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Advertisement & Commercial",
         "work_subs_cover": "advertisement-and-commercial-cover.webp",
         "work_url": "advertisement-and-commercial",
-        "work_image": [
-          "advertisement-and-commercial-1.webp",
-          "advertisement-and-commercial-2.webp",
-          "advertisement-and-commercial-3.webp",
-          "advertisement-and-commercial-4.webp",
-          "advertisement-and-commercial-5.webp",
-          "advertisement-and-commercial-6.webp",
-          "advertisement-and-commercial-7.webp",
-          "advertisement-and-commercial-8.webp",
-          "advertisement-and-commercial-9.webp",
-          "advertisement-and-commercial-10.webp",
-          "advertisement-and-commercial-11.webp",
-          "advertisement-and-commercial-12.webp",
-          "advertisement-and-commercial-13.webp",
-          "advertisement-and-commercial-14.webp"
+        "work_detail": [
+          {
+            "work_image": "advertisement-and-commercial-1.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-2.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-3.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-4.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-5.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-6.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-7.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-8.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-9.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-10.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-11.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-12.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-13.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          },
+          {
+            "work_image": "advertisement-and-commercial-14.webp",
+            "work_client": "PT. Bank Mandiri Tbk. / Plantation Division",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          }
         ]
       },
       {
         "work_subs_title": "Portrait",
         "work_subs_cover": "portrait-cover.webp",
         "work_url": "portrait",
-        "work_image": ["portrait-cover.webp"]
+        "work_detail": [
+          {
+            "work_image": "portrait-cover.webp",
+            "work_client": "Bapak-bapak",
+            "work_title": "Test Work Titel",
+            "work_city": "Jakarta",
+            "work_year": "2008"
+          }
+        ]
       }
     ]
   },
@@ -150,42 +445,162 @@
         "work_subs_title": "Motion Graphic",
         "work_subs_cover": "motion-graphic-cover.webp",
         "work_url": "motion-graphic",
-        "work_video": [
-          "sQdezl9geXQ",
-          "lPeWcK4NLsU",
-          "vLOthpYKaMc",
-          "AZ74eO1gvVE",
-          "p8Z87WDls0M"
+        "work_detail": [
+          {
+            "work_video": "sQdezl9geXQ",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "lPeWcK4NLsU",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "vLOthpYKaMc",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "AZ74eO1gvVE",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "p8Z87WDls0M",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Company Profile",
         "work_subs_cover": "company-profile-cover.webp",
         "work_url": "company-profile",
-        "work_video": ["E61aqrx105I"]
+        "work_detail": [
+          {
+            "work_video": "E61aqrx105I",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       },
       {
         "work_subs_title": "Event",
         "work_subs_cover": "event-cover.webp",
         "work_url": "event",
-        "work_video": [
-          "s-DsVTwMT-o",
-          "ha4gB4TQxm8",
-          "61sGrO9gEz8",
-          "C0d6Bp8U6D8",
-          "s-DsVTwMT-o",
-          "r7vr25a9pW4",
-          "6y-5jDhG9ys",
-          "SpSGaaQiiLk",
-          "HdS1OP7fvLs",
-          "edmTHxtpjsU"
+        "work_detail": [
+          {
+            "work_video": "s-DsVTwMT-o",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "ha4gB4TQxm8",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "61sGrO9gEz8",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "C0d6Bp8U6D8",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "s-DsVTwMT-o",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "r7vr25a9pW4",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "6y-5jDhG9ys",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "SpSGaaQiiLk",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "HdS1OP7fvLs",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "edmTHxtpjsU",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
         ]
       },
       {
         "work_subs_title": "Documentary",
         "work_subs_cover": "documentary-cover.webp",
         "work_url": "documentary",
-        "work_video": ["qveqjPOvSO8", "Ng0eyFpcWMk", "xRTZBwtbeTA"]
+        "work_detail": [
+          {
+            "work_video": "qveqjPOvSO8",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "Ng0eyFpcWMk",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          },
+          {
+            "work_video": "xRTZBwtbeTA",
+            "work_client": "Test Work Client",
+            "work_title": "Test Work Title",
+            "work_city": "Bandung",
+            "work_year": "2009"
+          }
+        ]
       }
     ]
   }

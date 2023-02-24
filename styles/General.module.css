@@ -162,7 +162,7 @@
 }
 
 .work_preview_container {
-  @apply bg-transparent md:bg-white flex flex-row justify-center items-center overflow-hidden relative;
+  @apply bg-transparent md:py-8 md:bg-white flex flex-row justify-center items-center overflow-hidden relative;
 }
 
 .work_preview_close {
@@ -183,7 +183,7 @@
 }
 
 .work_preview_content {
-  @apply w-[100vw] md:w-[80vw] h-[100vw] md:h-[80vh] overflow-hidden relative;
+  @apply w-[100vw] md:w-[80vw] h-[60vh] md:h-[80vh] overflow-hidden relative;
 }
 
 .work_preview_image_container {
@@ -191,11 +191,25 @@
 }
 
 .work_preview_image {
-  @apply object-center object-contain pointer-events-none;
+  @apply !h-[80%] object-center object-contain pointer-events-none;
 }
 
 .work_preview_video {
-  @apply mb-6 absolute top-0 left-0 mx-auto h-full w-full;
+  @apply mb-6 absolute top-0 left-0 mx-auto h-[70%] md:h-[80%] w-full;
+}
+
+.caption_container {
+  @apply flex flex-col bottom-0 px-8 py-4 min-w-[30%] bg-black/60 md:bg-transparent text-white md:text-zinc-700 absolute border-l-4 border-secondaryPink;
+}
+
+.caption_client {
+  @apply text-base md:text-lg font-normal;
+}
+.caption_title {
+  @apply text-sm font-normal;
+}
+.caption_city {
+  @apply text-sm font-normal;
 }
 
 /* w-32 h-20 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-[800px] lg:h-[600px]  */

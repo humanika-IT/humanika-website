@@ -34,11 +34,7 @@ const swipePower = (offset, velocity) => {
 const WorkOverlay = ({ filteredList }) => {
   const [[page, direction], setPage] = useState([0, 0]);
 
-  const imageIndex = wrap(
-    0,
-    filteredList.work_image?.length || filteredList.work_video?.length,
-    page
-  );
+  const imageIndex = wrap(0, filteredList.work_detail?.length, page);
 
   // useEffect(() => {
   //   setPreview(filteredList.work_image[imageIndex]);
@@ -47,6 +43,8 @@ const WorkOverlay = ({ filteredList }) => {
   const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
+
+  // console.log(filteredList.work_detail[imageIndex]);
 
   return (
     <div className={general.work_preview_container}>
@@ -87,9 +85,9 @@ const WorkOverlay = ({ filteredList }) => {
               }
             }}
           >
-            {filteredList.work_image && (
+            {filteredList.work_detail[imageIndex].work_image && (
               <Image
-                src={`/images/works/${filteredList.work_image[imageIndex]}`}
+                src={`/images/works/${filteredList.work_detail[imageIndex].work_image}`}
                 alt={"item"}
                 fill
                 quality={80}
@@ -97,11 +95,11 @@ const WorkOverlay = ({ filteredList }) => {
                 className={general.work_preview_image}
               />
             )}
-            {filteredList.work_video && (
+            {filteredList.work_detail[imageIndex].work_video && (
               <iframe
                 width="560"
                 height="315"
-                src={`https://www.youtube.com/embed/${filteredList.work_video[imageIndex]}`}
+                src={`https://www.youtube.com/embed/${filteredList.work_detail[imageIndex].work_video}`}
                 title="YouTube video player"
                 frameBorder="0"
                 className={general.work_preview_video}
@@ -109,6 +107,25 @@ const WorkOverlay = ({ filteredList }) => {
                 allowFullScreen
               ></iframe>
             )}
+            <div className={general.caption_container}>
+              {filteredList.work_detail[imageIndex].work_client && (
+                <span className={general.caption_client}>
+                  {filteredList.work_detail[
+                    imageIndex
+                  ].work_client.toUpperCase()}
+                </span>
+              )}
+              {filteredList.work_detail[imageIndex].work_title && (
+                <span className={general.caption_title}>
+                  {filteredList.work_detail[imageIndex].work_title}
+                </span>
+              )}
+              {filteredList.work_detail[imageIndex].work_city && (
+                <span className={general.caption_city}>
+                  {`${filteredList.work_detail[imageIndex].work_city}, ${filteredList.work_detail[imageIndex].work_year}`}
+                </span>
+              )}
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>
